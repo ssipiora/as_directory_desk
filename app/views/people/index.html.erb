@@ -8,7 +8,20 @@
 		
 		<tr>
 			<td><%= image_tag "photo-1.png", :height => '32', :width => '32' %></td>
-			<td><%= link_to person.lname + ", " + person.fname, person %><br> <%= person.ntid %></td>      
+			<td><%= link_to person.lname + ", " + person.fname, person %><br> <%= person.ntid %><br>
+				<div id="<%= person.id %>" class="accordion-body collapse" style="height: 0px; ">
+					<div class="accordion-inner">
+						<table>
+							<tr><td>Title:</td> <td><%= person.title %></td></tr>
+							<tr><td>Department:</td> <td><%= person.department %></td></tr>
+						  <tr><td>Address:</td> <td><%= person.address %><br><%= person.city %>, <%= person.state %> <%= person.zipcode %><br><%= person.country %></td></tr>
+
+						</table>
+					</div>
+				</div>
+
+				<!-- End accordian area -->
+				</td>      
 			<td><%= number_to_phone(person.phone, :area_code => true) %><br><%= mail_to person.email %></td>
 			<td>Suite: <%= person.suite %><br>Column: <%= person.column %></td>
 			<td><%= image_tag "map_icon1.png", :height => '32', :width => '32' %></td>
@@ -33,19 +46,7 @@
 	</tbody>
 </table>
 
-<!-- Accordian area -->
 
-<div id="<%= person.id %>" class="accordion-body collapse" style="height: 0px; ">
-	<div class="accordion-inner">
-		<%= person.title %><br>
-		<%= person.department %><br>
-		<%= person.address %><br>
-		<%= person.city %>, <%= person.state %> <%= person.zipcode %><br>
-		<%= person.country %>
-	</div>
-</div>
-
-<!-- End accordian area -->
 
 <% end %>
 
