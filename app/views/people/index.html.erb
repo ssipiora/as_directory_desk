@@ -11,8 +11,24 @@
         <td><%= number_to_phone(person.phone, :area_code => true) %><br><%= mail_to person.email %></td>
         <td>Suite: <%= person.suite %><br>Column: <%= person.column %></td>
 				<td><%= image_tag "map_icon1.png", :height => '32', :width => '32' %></td>
-        <td><%= person.title %><br><%= person.department %></td>
+				<td><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#<%= person.id %>"> <button type="link" class="btn btn-info btn-small">
+				              <i class="icon-chevron-down"></i>
+				            </button></a></td>
+				
+        <!-- <td><%= person.title %><br><%= person.department %></td> -->
 
+				<!-- Accordian area -->
+
+				        <div id="<%= person.id %>" class="accordion-body collapse" style="height: 0px; ">
+				          <div class="accordion-inner">
+										<%= person.title %><br><%= person.department %>
+				            <%= person.address %><br>
+				            <%= person.city %><%= person.state %> <%= person.ntid %><%= person.zipcode %>
+				          </div>
+				        </div>
+
+				    <!-- End accordian area -->
+				
         <!-- <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_person_path(person), :class => 'btn btn-mini' %>
@@ -23,6 +39,7 @@
                       :class => 'btn btn-mini btn-danger' %>
         </td> -->
       </tr>
+
     <% end %>
   </tbody>
 </table>
