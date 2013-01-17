@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-	<div class='search'>
-		<%= image_tag "as_logo_search.png" %>
-		<br><br>
-		
-			<p><strong>Enter Search Criteria</strong></p>
-			        <form class="form-inline">
+	<!-- <table>
+		<tr>
+		<td> --><div class='search'>
+			<%= image_tag "as_logo_search.png" %>
+			<br><br>
+			<div class='well' style="width: 38%">
+				<p><strong>Enter Search Criteria</strong></p>
+				<form class="form-inline">
 
-			          <input type="text" class="input-large" placeholder="Name, Phone #, Conf Rm Name" autofocus >
-			          <button type="submit" class="btn">Search</button> 
-			                        <!-- accordian button -->
+					<input type="text" class="input-large" placeholder="Name, Phone #, Conf Rm Name" autofocus >
+					<button type="submit" class="btn">Search</button> 
+					<!-- accordian button -->
 
-			          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseHelp"> <button type="link" class="btn btn-info btn-mini">
-			              <i class="icon-question-sign"></i>
-			            </button></a>
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseHelp"> <button type="link" class="btn btn-info btn-mini">
+						<i class="icon-question-sign"></i>
+					</button></a>
 
-			        </form>
+				</form>
 
 
-			    <!-- Accordian area -->
+				<!-- Accordian area -->
 
-			        <div id="collapseHelp" class="accordion-body collapse" style="height: 0px; ">
-			          <div class="accordion-inner">
-			            <p><strong>Person Search:</strong> Last Name, First Name (e.g. Smith, John)</p>
-			                <p><strong>Conference Room Search:</strong> Plaza-Building, Suite-Name (e.g South-I2W-20E-1)</p>
-			                <p><strong>Phone Number Search:</strong> Please provide at least the last 4 digits of the phone number (e.g. 8686)</p>
-			          </div>
-			        </div>
+				<div id="collapseHelp" class="accordion-body collapse" style="height: 0px; ">
+					<div class="accordion-inner">
+						<p><strong>Person Search:</strong> <br>Last Name, First Name (e.g. Smith, John)</p>
+						<p><strong>Conference Room Search:</strong> <br>Plaza-Building, Suite-Name (e.g South-I2W-20E-1)</p>
+						<p><strong>Phone Number Search:</strong> <br>Please provide at least the last 4 digits of the phone number (e.g. 8686)</p>
+					</div>
+				</div>
 
-			    <!-- End accordian area -->
-				
-		<!-- end accordian help -->
-			
-		<p>If you need to update your information within the Global Address Book, please click here.</p>
-		<p>Do you have feedback/suggestions regarding the corporate directory application? Click here and share your thoughts.</p>
-		<div class='well'>				
-			  <label class="checkbox">
-				      <input type="checkbox"> Employee & Contractor
+				<!-- End accordian area -->
+
+				<!-- end accordian help -->
+
+
+
+				<p><h6>Filter Results</h6></p>	
+				<label class="checkbox">
+					<input type="checkbox"> Employee & Contractor
 				</label>
 				<label class="checkbox">
-				      <input type="checkbox"> Agent
+					<input type="checkbox"> Agent
 				</label>
 				<label class="checkbox">
-				      <input type="checkbox"> Conference Room
+					<input type="checkbox"> Conference Room
 				</label>
+			</div>
 		</div>
-	</div>
-	
-<%= yield %>
+		<!-- </td>
+		<td>
+		</td>
+		<td> -->
+			<p>Is your information up to date? If not go to the <a href="#">Address Book Update Form</a> to make the necessary changes. </p>
+			<p>Do you have feedback/suggestions regarding the corporate directory application? Go to the <a href="#">Corporate Directory Blog</a> and give us your feedback.</p>
+		<!-- </td>
+		</tr>
+		</table> -->
+
+	<%= yield %>
 
 </body>
 </html>

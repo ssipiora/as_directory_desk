@@ -37,9 +37,11 @@
 
 <div id="<%= person.id %>" class="accordion-body collapse" style="height: 0px; ">
 	<div class="accordion-inner">
-		<%= person.title %><br><%= person.department %>
+		<%= person.title %><br>
+		<%= person.department %><br>
 		<%= person.address %><br>
-		<%= person.city %><%= person.state %> <%= person.ntid %><%= person.zipcode %>
+		<%= person.city %>, <%= person.state %> <%= person.zipcode %><br>
+		<%= person.country %>
 	</div>
 </div>
 

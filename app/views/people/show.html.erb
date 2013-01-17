@@ -10,6 +10,12 @@
   <dd><%= @person.lname %></dd>
   <dt><strong><%= model_class.human_attribute_name(:phone) %>:</strong></dt>
   <dd><%= @person.phone %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mobile) %>:</strong></dt>
+  <dd><%= @person.mobile %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fax) %>:</strong></dt>
+  <dd><%= @person.fax %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:pager) %>:</strong></dt>
+  <dd><%= @person.pager %></dd>
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
   <dd><%= @person.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:ntid) %>:</strong></dt>
@@ -32,10 +38,12 @@
   <dd><%= @person.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:department) %>:</strong></dt>
   <dd><%= @person.department %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:equipment) %>:</strong></dt>
-  <dd><%= @person.equipment %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:capacity) %>:</strong></dt>
-  <dd><%= @person.capacity %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:company) %>:</strong></dt>
+  <dd><%= @person.company %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:office) %>:</strong></dt>
+  <dd><%= @person.office %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:assistant) %>:</strong></dt>
+  <dd><%= @person.assistant %></dd>
 </dl>
 
 <div class="form-actions">

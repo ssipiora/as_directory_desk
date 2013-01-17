@@ -18,6 +18,24 @@
     </div>
   </div>
   <div class="control-group">
+    <%= f.label :mobile, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :mobile, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fax, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :fax, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :pager, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :pager, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
     <%= f.label :email, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :email, :class => 'text_field' %>
@@ -84,15 +102,33 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :equipment, :class => 'control-label' %>
+    <%= f.label :company, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :equipment, :class => 'text_field' %>
+      <%= f.text_field :company, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :capacity, :class => 'control-label' %>
+    <%= f.label :office, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :capacity, :class => 'text_field' %>
+      <%= f.text_field :office, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :assistant, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :assistant, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :manager, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :manager, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :direct_report, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :direct_report, :class => 'text_field' %>
     </div>
   </div>
 
