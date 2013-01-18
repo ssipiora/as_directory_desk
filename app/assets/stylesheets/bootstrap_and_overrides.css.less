@@ -6,9 +6,10 @@
 @iconWhiteSpritePath: asset-path("twitter/bootstrap/glyphicons-halflings-white");
 
 // Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
-// Note: If you use asset_path() here, your compiled boostrap_and_overrides.css will not
+// Note: If you use asset_path() here, your compiled bootstrap_and_overrides.css will not
 //       have the proper paths. So for now we use the absolute path.
 @fontAwesomeEotPath: asset-path("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-path("fontawesome-webfont.eot#iefix");
 @fontAwesomeWoffPath: asset-path("fontawesome-webfont.woff");
 @fontAwesomeTtfPath: asset-path("fontawesome-webfont.ttf");
 @fontAwesomeSvgPath: asset-path("fontawesome-webfont.svg");
@@ -29,33 +30,3 @@
 //
 // Example:
 // @linkColor: #ff0000;
-
-.table {
-	margin: 20px;
-}
-
-div.logo {
-	width: 100%;
-	padding: 20px 0px 0px 20px;
-}
-
-div.search {
-	padding: 0px 0px 0px 20px;
-	float: left;
-	width: 38%;
-}
-
-div.reminder {
-	float: right;
-	width: 40%;
-	padding: 30px 30px 0px 0px;
-	margin: 40px 30px 0px 0px;
-}
-
-div.clear{
-	clear: both;
-}
-
-a {
-  text-decoration: underline;
-}
